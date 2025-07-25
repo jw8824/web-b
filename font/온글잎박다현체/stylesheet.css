@@ -1,0 +1,12 @@
+
+@font-face {
+    font-family: 'Ownglyph PDH';
+    src: url('Ownglyph_PDH-Rg.eot');
+    src: url('Ownglyph_PDH-Rg.eot?#iefix') format('embedded-opentype'),
+        url('Ownglyph_PDH-Rg.woff2') format('woff2'),
+        url('Ownglyph_PDH-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
