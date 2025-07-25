@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경이미지</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .bg-01 {
+            height: 300px;
+            background-color: aqua;
+            margin: 50px;
+            background-image: url('img/image-1.jpg');
+            background-size: cover;
+            /* cover, contain */
+            background-repeat: no-repeat;
+            /* repeat-x,
+            repeat-y,
+            repeat(기본값)
+            no-repeat */
+            background-position: center center;
+            /* x축 left, center, right
+            y축 top, center, bottom  */
+        }
+        .bg-02 {
+            height: 300px;
+            background-color: antiquewhite;
+            margin: 50px;
+            background: url('img/image-3.jpg') center center / cover no-repeat;
+            /* 배경: 이미지경로 x축위치 y축위치 / 사이즈 이미지반복 */
+        }
+        .bg-03 {
+            height: 500px;
+            margin: 50px;
+            background: url('img/image-4.jpg') center center / cover no-repeat fixed;
+            /* background-attachment: fixed; */
+        }
+        .bg-04 {
+            height: 300px;
+            margin: 50px;
+            background: #EEAECA;
+            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+        <div class="bg-01">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum tempore aspernatur mollitia aliquid nulla ad nobis, consequatur pariatur minima consequuntur corrupti blanditiis suscipit explicabo laborum facilis quas, eveniet, fugiat alias.</p>
+        </div><!-- bg-01 end -->
+
+        <div class="bg-02">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum tempore aspernatur mollitia aliquid nulla ad nobis, consequatur pariatur minima consequuntur corrupti blanditiis suscipit explicabo laborum facilis quas, eveniet, fugiat alias.</p>
+        </div><!-- bg-02 end -->
+
+        <div class="bg-03">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum tempore aspernatur mollitia aliquid nulla ad nobis, consequatur pariatur minima consequuntur corrupti blanditiis suscipit explicabo laborum facilis quas, eveniet, fugiat alias.</p>
+        </div><!-- bg-03 end -->
+        <div class="bg-04">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum tempore aspernatur mollitia aliquid nulla ad nobis, consequatur pariatur minima consequuntur corrupti blanditiis suscipit explicabo laborum facilis quas, eveniet, fugiat alias.</p>
+        </div><!-- bg-04 end -->
+</body>
+</html>
